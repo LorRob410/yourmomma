@@ -355,17 +355,6 @@ end
     Library.Themes = Themes
 
     -- Folder paths (not initialized until needed)
-    local FolderDirectory = "Block.cc"
-    local FolderConfigs = "Block.cc/Configs"
-    local FolderAssets = "Block.cc/Assets"
-
-    local function InitFolders()
-        pcall(function()
-            if not isfolder(FolderDirectory) then makefolder(FolderDirectory) end
-            if not isfolder(FolderConfigs) then makefolder(FolderConfigs) end
-            if not isfolder(FolderAssets) then makefolder(FolderAssets) end
-        end)
-    end
 
     -- Icon Helper Functions
     local function GetLucideIcon(IconName)
